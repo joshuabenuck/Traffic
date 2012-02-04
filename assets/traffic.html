@@ -1,0 +1,27 @@
+<html>
+<head>
+<style>
+img {
+  width: 300px
+}
+</style>
+</head>
+<body>
+<div><img id="logo" src="file:///android_asset/tplogo.gif"/></div>
+<div><img src="http://tripcheck.com/images/map/SpeedMap.gif"/></div>
+
+<div><img src="http://tripcheck.com/RoadCams/cams/i5portlandblvd_pid572.jpg"/></div>
+<div><img src="http://tripcheck.com/RoadCams/cams/i5going_pid561.jpg"/></div>
+<div><img src="http://tripcheck.com/RoadCams/cams/i5fremont_pid560.jpg"/></div>
+<div><img src="http://tripcheck.com/RoadCams/cams/fremontbridge_pid531.jpg"/></div>
+<div><img src="http://tripcheck.com/RoadCams/cams/i405everett_pid545.jpg"/></div>
+<div><img src="http://tripcheck.com/RoadCams/cams/26Jefferson_pid525.jpg"/></div>
+<div><img src="http://tripcheck.com/RoadCams/cams/26Washington_pid1332.jpg"/></div>
+<div><img src="http://tripcheck.com/RoadCams/cams/26Zoo_pid498.jpg"/></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$("img").each(function(ignored, i) { i.src = i.src + "?" + (new Date().getTime()) });
+$("#logo").click( function() { location.reload(true); } );
+</script>
+</body>
+</html>
